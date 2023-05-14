@@ -4,6 +4,8 @@ import numpy as np
 # Load the image
 image = cv2.imread("segment picture.jpg")
 image1 = cv2.imread("image.png")
+if (image.shape[0] == image1.shape[0]) and (image.shape[1] == image1.shape[1]):
+    print('everything is still good')
 # Convert the image to HSV color space
 
 # Create a mask for each color
